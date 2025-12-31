@@ -100,15 +100,21 @@ input {
   border: 1px solid var(--border-color);
   border-radius: 5px;
   outline: none;
+  height: 30px;
+  padding: 8px;
+  font-family: inherit;
 }
 
 input:focus {
   border: 1px solid rgb(43, 95, 238);
 }
 
-input:invalid {
-  border-color: rgb(236, 14, 7);
+input:user-valid {
+  border-color: green;
 }
+input:user-invalid {
+  border-color: rgb(236, 14, 7);
+} 
 
 button {
   margin-left: calc(var(--left-padding) + 5px);

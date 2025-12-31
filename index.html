@@ -29,31 +29,37 @@
 
         <div class="form-group">
           <label for="first_name">FIRST NAME</label>
-          <input type="text" id="first_name" name="first_name" required>
+          <input type="text" id="first_name" placeholder="Minur" name="first_name" required minlength="3" pattern="\S{3,}"
+          title="It must be a minimum of 3 characters.">
         </div>
 
-        <div class="form-group"> <label for="last_name">LAST NAME</label>
-          <input type="text" id="last_name" name="last_name" required>
+        <div class="form-group">
+          <label for="last_name">LAST NAME</label>
+          <input type="text" id="last_name" name="last_name">
         </div>
 
         <div class="form-group">
           <label for="e_mail">EMAIL</label>
-          <input type="email" id="e_mail" name="user_email">
+          <input type="email" id="e_mail" placeholder="example@adress.com" name="user_email" required>
         </div>
 
         <div class="form-group">
           <label for="phone_no">PHONE NUMBER</label>
-          <input type="number" id="phone_no" name="user_phone_no">
+          <input type="tel" id="phone_no" name="user_phone_no" minlength="5" maxlength="15" pattern="[+0-9]{5,15}"
+          title="The lenth of numbers must be 5 to 15.">
         </div>
 
         <div class="form-group">
           <label for="password">PASSWORD</label>
-          <input type="password" id="password" name="user_password" required>
+          <input type="password" id="password" name="user_password" required minlength="8" maxlength="20"
+          pattern="\S{8,20}" 
+          title="It must be 8 to 20 characters. Spaces and tabs are not allowed.">
         </div>
 
         <div class="form-group">
           <label for="password">CONFIRM PASSWORD</label>
-          <input type="password" id="password" name="confirm_password" required>
+          <input type="password" id="password" name="confirm_password" required minlength="8" maxlength="20" pattern="\S{8,20}" 
+          title="It must be 8 to 20 characters. Spaces and tabs are not allowed.">
         </div>
       </form>
 
