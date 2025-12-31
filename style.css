@@ -59,3 +59,73 @@
   font-weight: 600;
   padding-left: var(--left-padding);
 }
+
+form,
+input,
+label,
+legend {
+  font: inherit;
+}
+
+form {
+  margin-top: 2em;
+  background-color: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  padding: 2em 50px 2em var(--left-padding);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+form> :first-child {
+  color: var(--grey-font);
+  font-weight: 500;
+  font-size: var(--para-font);
+  width: 100%;
+}
+
+.form-group {
+  flex-basis: 45%;
+}
+
+input {
+  width: 60%;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid rgb(43, 95, 238);
+}
+
+input:invalid {
+  border-color: rgb(236, 14, 7);
+}
+
+button {
+  margin-left: calc(var(--left-padding) + 5px);
+  background-color: var(--green-color);
+  font-size: 1rem;
+  border: none;
+  font-weight: 600;
+  padding: 0.5em 2em;
+  border-radius: 5px;
+  color: white;
+}
+
+button+p {
+  padding-left: var(--left-padding);
+  margin-top: 15px;
+}
+
+.log-in {
+  color: var(--green-color);
+}
