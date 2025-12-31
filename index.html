@@ -23,25 +23,42 @@
       <p>
         You <em>know</em> you want to.
       </p>
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Let's do this!</legend>
+
+      <form action="" method="post">
+        <div>Let's do this!</div>
+
+        <div class="form-group">
           <label for="first_name">FIRST NAME</label>
-          <input type="text" id="first_name" name="first_name">
-          <label for="last_name">LAST NAME</label>
-          <input type="text" id="last_name" name="last_name">
+          <input type="text" id="first_name" name="first_name" required>
+        </div>
+
+        <div class="form-group"> <label for="last_name">LAST NAME</label>
+          <input type="text" id="last_name" name="last_name" required>
+        </div>
+
+        <div class="form-group">
           <label for="e_mail">EMAIL</label>
           <input type="email" id="e_mail" name="user_email">
+        </div>
+
+        <div class="form-group">
+          <label for="phone_no">PHONE NUMBER</label>
+          <input type="number" id="phone_no" name="user_phone_no">
+        </div>
+
+        <div class="form-group">
           <label for="password">PASSWORD</label>
-          <input type="password" id="password" name="user_password">
+          <input type="password" id="password" name="user_password" required>
+        </div>
+
+        <div class="form-group">
           <label for="password">CONFIRM PASSWORD</label>
-          <input type="password" id="password" name="confirm_password">
-        </fieldset>
-        <fieldset>
-          <button type="submit">Create Account</button>
-        </fieldset>
+          <input type="password" id="password" name="confirm_password" required>
+        </div>
       </form>
-      <p>Already have an account? <span>Log in</span></p>
+
+      <button type="submit">Create Account</button>
+      <p>Already have an account? <span class="log-in">Log in</span></p>
     </div>
   </div>
 </body>
