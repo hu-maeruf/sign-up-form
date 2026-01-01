@@ -18,3 +18,6 @@ This project is part of TOP curriculum and focuses on form structure, validation
 - HTML form validation
 - Styling CSS pseudo-classes
 - Form layout with Flexbox
+
+## Future Improvements
+- Make it my own version
